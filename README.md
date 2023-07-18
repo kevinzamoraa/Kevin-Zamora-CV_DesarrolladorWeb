@@ -57,4 +57,7 @@
 
 ## Siguientes pasos:
 - Completar información restante, la cual resta a ser modificada, partiendo de la base aportada por la plantilla elegida (Datos aún en Inglés).
+- Añadir animaciones y depurar estilos.
+- Añadir 'navbar (superior a la ya existente)' y alojar en esta los enlaces a otras páginas de interés que iremos creando (PE: Biografía, Publicaciones y/o un pequeño 'ecommerce', entre otras).
+- Añadir 'social bar' en el lateral derecho, centrado verticalmente y anclado con 'position-absolute'-
 
