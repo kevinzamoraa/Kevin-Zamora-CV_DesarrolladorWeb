@@ -1,0 +1,3 @@
+verDetalles(experiencia: any): void {
+    this.router.navigate(['/detalles'], { state: { experiencia, tipo: 'educativa' } });
+  }
