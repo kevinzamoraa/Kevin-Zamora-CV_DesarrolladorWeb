@@ -1,0 +1,19 @@
+// 
+// Styles
+// 
+
+// Import variables
+@import "./variables";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global";
+
+// Components
+@import "./components/sidenav";
+@import "./components/icons";
+
+// Sections
+@import "./sections/resume-section";
