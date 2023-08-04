@@ -11,6 +11,30 @@ const routes: Routes = [
         path: 'tab1',
         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       },
+          {
+            path: 'tab1/about-me',
+            loadChildren: () => import('../tab1/about-me/about-me.module').then( m => m.AboutMePageModule)
+          },
+          {
+            path: 'tab1/experience',
+            loadChildren: () => import('../tab1/experience/experience.module').then( m => m.ExperiencePageModule)
+          },
+          {
+            path: 'tab1/education',
+            loadChildren: () => import('../tab1/education/education.module').then( m => m.EducationPageModule)
+          },
+          {
+            path: 'tab1/skills',
+            loadChildren: () => import('../tab1/skills/skills.module').then( m => m.SkillsPageModule)
+          },
+          {
+            path: 'tab1/interests',
+            loadChildren: () => import('../tab1/interests/interests.module').then( m => m.InterestsPageModule)
+          },
+          {
+            path: 'tab1/awards',
+            loadChildren: () => import('../tab1/awards/awards.module').then( m => m.AwardsPageModule)
+          },
       {
         path: 'tab2',
         loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
@@ -21,7 +45,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/tab1/about-me',
         pathMatch: 'full'
       }
     ]
