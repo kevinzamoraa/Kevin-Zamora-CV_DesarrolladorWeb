@@ -36,12 +36,12 @@ const routes: Routes = [
             loadChildren: () => import('../cv/awards/awards.module').then( m => m.AwardsPageModule)
           },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'biography',
+        loadChildren: () => import('../biography/biography.module').then(m => m.Tab2PageModule)
       },
       {
         path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        loadChildren: () => import('../store/store.module').then(m => m.Tab3PageModule)
       },
       {
         path: '',
