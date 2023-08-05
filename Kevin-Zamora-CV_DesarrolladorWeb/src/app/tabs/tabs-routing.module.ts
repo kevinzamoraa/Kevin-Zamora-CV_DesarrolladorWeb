@@ -8,32 +8,32 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'cv',
+        loadChildren: () => import('../cv/cv.module').then(m => m.Tab1PageModule)
       },
           {
-            path: 'tab1/about-me',
-            loadChildren: () => import('../tab1/about-me/about-me.module').then( m => m.AboutMePageModule)
+            path: 'cv/about-me',
+            loadChildren: () => import('../cv/about-me/about-me.module').then( m => m.AboutMePageModule)
           },
           {
-            path: 'tab1/experience',
-            loadChildren: () => import('../tab1/experience/experience.module').then( m => m.ExperiencePageModule)
+            path: 'cv/experience',
+            loadChildren: () => import('../cv/experience/experience.module').then( m => m.ExperiencePageModule)
           },
           {
-            path: 'tab1/education',
-            loadChildren: () => import('../tab1/education/education.module').then( m => m.EducationPageModule)
+            path: 'cv/education',
+            loadChildren: () => import('../cv/education/education.module').then( m => m.EducationPageModule)
           },
           {
-            path: 'tab1/skills',
-            loadChildren: () => import('../tab1/skills/skills.module').then( m => m.SkillsPageModule)
+            path: 'cv/skills',
+            loadChildren: () => import('../cv/skills/skills.module').then( m => m.SkillsPageModule)
           },
           {
-            path: 'tab1/interests',
-            loadChildren: () => import('../tab1/interests/interests.module').then( m => m.InterestsPageModule)
+            path: 'cv/interests',
+            loadChildren: () => import('../cv/interests/interests.module').then( m => m.InterestsPageModule)
           },
           {
-            path: 'tab1/awards',
-            loadChildren: () => import('../tab1/awards/awards.module').then( m => m.AwardsPageModule)
+            path: 'cv/awards',
+            loadChildren: () => import('../cv/awards/awards.module').then( m => m.AwardsPageModule)
           },
       {
         path: 'tab2',
@@ -45,14 +45,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1/about-me',
+        redirectTo: '/tabs/cv/about-me',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/cv',
     pathMatch: 'full'
   }
 ];
