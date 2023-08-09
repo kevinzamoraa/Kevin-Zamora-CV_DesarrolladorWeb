@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Store } from './store.page';
-import { HomePage } from './home/home.page';
 
 import { StoreRoutingModule } from './store-routing.module';
 
@@ -21,7 +20,7 @@ import { HeaderComponent } from './header/header.component';
     MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule,
     StoreRoutingModule
   ],
-  declarations: [Store, HomePage, HeaderComponent],
-  exports: [Store, HomePage, HeaderComponent]
+  declarations: [Store, HeaderComponent],
+  exports: [Store, HeaderComponent]
 })
 export class StorePageModule {}

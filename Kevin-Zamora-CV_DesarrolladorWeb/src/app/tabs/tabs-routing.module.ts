@@ -43,10 +43,6 @@ const routes: Routes = [
         path: 'bookstore',
         loadChildren: () => import('../store/store.module').then(m => m.StorePageModule)
       },
-          {
-            path: 'bookstore/home',
-            loadChildren: () => import('../store/home/home.module').then( m => m.HomePageModule)
-          },
       {
         path: '',
         redirectTo: '/tabs/cv/about-me',
