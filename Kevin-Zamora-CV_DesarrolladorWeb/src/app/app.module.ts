@@ -13,6 +13,7 @@ import { MainComponentsModule } from './main-components/main-components.module';
 import { PersonalDataModule } from './personal-data/personal-data.module';
 import { VolunteeringAndSocialActionsModule } from './volunteering-and-social-actions/volunteering-and-social-actions.module';
 import { WorkingExperienciesModule } from './working-experiencies/working-experiencies.module';
+import { StorePageModule } from './store/store.module';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     PersonalDataModule,
     VolunteeringAndSocialActionsModule,
     WorkingExperienciesModule,
+    StorePageModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule

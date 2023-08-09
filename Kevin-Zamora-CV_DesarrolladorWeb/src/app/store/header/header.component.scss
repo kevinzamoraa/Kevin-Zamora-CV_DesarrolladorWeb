@@ -1,0 +1,38 @@
+// 
+// Styles
+// 
+
+// Import variables
+// @import "../../styles.scss";
+
+// Utility
+@import "../../../assets/ecommerce/css/utility.css";
+// Main
+@import "../../../assets/ecommerce/css/bundle.css";
+
+// Bootstrap 4
+@import "../../../assets/ecommerce/css/bootstrap.min.css";
+
+// Font Awesome 5
+@import "../../../assets/ecommerce/css/fontawesome.min.css";
+
+// Ion-Icons 4
+@import "../../../assets/ecommerce/css/ionicons.min.css";
+
+// Animate CSS
+@import "../../../assets/ecommerce/css/animate.min.css";
+
+// Owl-Carousel
+@import "../../../assets/ecommerce/css/owl.carousel.min.css";
+// Jquery-Ui-Range-Slider
+@import "../../../assets/ecommerce/css/jquery-ui-range-slider.min.css";
+
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    color: #60f; 
+}

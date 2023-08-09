@@ -40,9 +40,13 @@ const routes: Routes = [
         loadChildren: () => import('../biography/biography.module').then(m => m.Tab2PageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../store/store.module').then(m => m.Tab3PageModule)
+        path: 'bookstore',
+        loadChildren: () => import('../store/store.module').then(m => m.StorePageModule)
       },
+          {
+            path: 'bookstore/home',
+            loadChildren: () => import('../store/home/home.module').then( m => m.HomePageModule)
+          },
       {
         path: '',
         redirectTo: '/tabs/cv/about-me',

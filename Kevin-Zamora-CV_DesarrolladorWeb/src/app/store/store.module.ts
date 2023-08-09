@@ -2,17 +2,26 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab3Page } from './store.page';
+import { Store } from './store.page';
+import { HomePage } from './home/home.page';
 
-import { Tab3PageRoutingModule } from './store-routing.module';
+import { StoreRoutingModule } from './store-routing.module';
+
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    Tab3PageRoutingModule
+    MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule,
+    StoreRoutingModule
   ],
-  declarations: [Tab3Page]
+  declarations: [Store, HomePage, HeaderComponent],
+  exports: [Store, HomePage, HeaderComponent]
 })
-export class Tab3PageModule {}
+export class StorePageModule {}
