@@ -1,0 +1,25 @@
+.dark-navbar {
+    background-color:black
+}
+
+.dark-navbar ion-tab-button {
+    background-color:black
+}
+
+.dark-navbar ion-tab-button div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dark-navbar ion-tab-button div:active {
+    color:#6600FF
+}
+
+.dark-navbar ion-label {
+    color:azure
+}
+
+.dark-navbar ion-icon {
+    color:azure
+}

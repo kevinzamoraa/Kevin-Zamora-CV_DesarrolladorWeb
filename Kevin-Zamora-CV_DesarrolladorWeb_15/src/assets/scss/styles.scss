@@ -1,0 +1,23 @@
+// 
+// Styles
+// 
+
+// Import variables
+@import "./variables";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global";
+// @import "./global2";
+
+// Components
+@import "./components/sidenav";
+@import "./components/icons";
+
+// Sections
+@import "./sections/resume-section";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
