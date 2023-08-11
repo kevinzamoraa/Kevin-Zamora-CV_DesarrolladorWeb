@@ -6,13 +6,12 @@ import { LanguagesComponent } from './languages/languages.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 
 
-
 @NgModule({
   declarations: [
     IntroAbstractComponent,
     ContactDatasComponent,
     LanguagesComponent,
-    SocialNetworksComponent
+    SocialNetworksComponent,
   ],
   imports: [
     CommonModule

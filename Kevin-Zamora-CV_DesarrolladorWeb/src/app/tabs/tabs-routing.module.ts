@@ -35,6 +35,14 @@ const routes: Routes = [
             path: 'cv/awards',
             loadChildren: () => import('../cv/awards/awards.module').then( m => m.AwardsPageModule)
           },
+          {
+            path: 'cv/es',
+            loadChildren: () => import('../cv/es-cv-viewer/es-cv-viewer.module').then( m => m.EsCvViewerPageModule)
+          },
+          {
+            path: 'cv/en',
+            loadChildren: () => import('../cv/en-cv-viewer/en-cv-viewer.module').then( m => m.EnCvViewerPageModule)
+          },
       {
         path: 'biography',
         loadChildren: () => import('../biography/biography.module').then(m => m.Tab2PageModule)
