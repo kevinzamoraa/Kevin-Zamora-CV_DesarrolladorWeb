@@ -2,7 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './cv.page';
+import { CvPage } from './cv.page';
+
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 import { Tab1PageRoutingModule } from './cv-routing.module';
 import { PersonalDataModule } from "../personal-data/personal-data.module";
@@ -11,7 +14,7 @@ import { EducationalExperienciesModule } from "../educational-experiencies/educa
 import { MainComponentsModule } from "../main-components/main-components.module";
 
 @NgModule({
-    declarations: [Tab1Page],
+    declarations: [CvPage],
     imports: [
         IonicModule,
         CommonModule,
@@ -20,7 +23,9 @@ import { MainComponentsModule } from "../main-components/main-components.module"
         PersonalDataModule,
         WorkingExperienciesModule,
         EducationalExperienciesModule,
-        MainComponentsModule
+        MainComponentsModule,
+        MatMenuModule,
+        MatButtonModule
     ]
 })
 export class Tab1PageModule {}

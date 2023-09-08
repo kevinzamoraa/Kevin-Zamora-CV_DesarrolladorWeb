@@ -1,39 +1,39 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Tab1Page } from './cv.page';
+import { CvPage } from './cv.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: Tab1Page,
+    component: CvPage,
   },
   {
-    path: 'tab1/about-me',
+    path: 'cv/about-me',
     loadChildren: () => import('./about-me/about-me.module').then( m => m.AboutMePageModule)
   },
   {
-    path: 'tab1/experience',
+    path: 'cv/experience',
     loadChildren: () => import('./experience/experience.module').then( m => m.ExperiencePageModule)
   },
   {
-    path: 'tab1/education',
+    path: 'cv/education',
     loadChildren: () => import('./education/education.module').then( m => m.EducationPageModule)
   },
   {
-    path: 'tab1/skills',
+    path: 'cv/skills',
     loadChildren: () => import('./skills/skills.module').then( m => m.SkillsPageModule)
   },
   {
-    path: 'tab1/interests',
+    path: 'cv/interests',
     loadChildren: () => import('./interests/interests.module').then( m => m.InterestsPageModule)
   },
   {
-    path: 'tab1/awards',
+    path: 'cv/awards',
     loadChildren: () => import('./awards/awards.module').then( m => m.AwardsPageModule)
   },
   {
     path: '',
-    redirectTo: 'tab1/about-me',
+    redirectTo: 'cv/about-me',
     pathMatch: 'full'
   }
 ];

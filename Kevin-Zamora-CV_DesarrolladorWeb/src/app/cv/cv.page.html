@@ -3,24 +3,26 @@
         <ion-buttons class="primary-nav g-nav contact" slot="start">
             <ion-button href="tel:+34633977311"><ion-icon name="call-outline"></ion-icon>
                 &nbsp; 633 977 311</ion-button>
-            <ion-button href="mailto:contactaconkev@gmail.com">&#32;<ion-icon name="mail-outline"></ion-icon>
+            <ion-button target="_blank" href="mailto:contactaconkev@gmail.com" onclick="copyToClipboard()" value="contactaconkev@gmail.com" id="email">&#32;<ion-icon name="mail-outline"></ion-icon>
                 &nbsp; contactaconkev@gmail.com</ion-button>
         </ion-buttons>
         <ion-buttons slot="end">
-            <!-- <ion-button href=""><i class="fa fa fa-file fa-2x icon-style"></i></ion-button> -->
-            <ion-button href=""><ion-icon name="document-outline"></ion-icon></ion-button>
-            <!-- <ion-button href=""><i class="fa fa-envelope fa-2x icon-style"></i></ion-button> -->
-            <ion-button href=""><ion-icon name="mail-outline"></ion-icon></ion-button>
-            <!-- <ion-button><i class="fab fa-linkedin-in fa-2x icon-style"></i></ion-button> -->
-            <ion-button><ion-icon name="logo-linkedin"></ion-icon></ion-button>
-            <!-- <ion-button><i class="fab fa-github fa-2x icon-style"></i></ion-button> -->
-            <ion-button><ion-icon name="logo-github"></ion-icon></ion-button>
-            <!-- <ion-button><i class="fab fa-whatsapp fa-2x icon-style"></i></ion-button> -->
-            <ion-button><ion-icon name="logo-whatsapp"></ion-icon></ion-button>
-            <!-- <ion-button href="https://www.google.com/search?q=kevin+zamora+amela&oq=kevin+zamora+amela"><i class="fab fa-google fa-2x icon-style"></i></ion-button> -->
-            <ion-button><ion-icon name="logo-google"></ion-icon></ion-button>
-            <!-- <ion-button><i class="fab fa-youtube fa-2x icon-style"></i></ion-button> -->
-            <ion-button><ion-icon name="logo-youtube"></ion-icon></ion-button>
+            
+            <ion-button target="_blank" href="../../assets/docs/Kevin-Zamora-CV23_G3_ES.pdf"><ion-icon name="document-outline"></ion-icon></ion-button>
+            
+            <ion-button target="_blank" href="mailto:contactaconkev@gmail.com"><ion-icon name="mail-outline"></ion-icon></ion-button>
+
+            <ion-button href="tel:+34633977311"><ion-icon name="call-outline"></ion-icon></ion-button>
+            
+            <ion-button target="_blank" href="https://www.linkedin.com/in/imkevzamora/"><ion-icon name="logo-linkedin"></ion-icon></ion-button>
+            
+            <ion-button target="_blank" href="https://github.com/zamelkev"><ion-icon name="logo-github"></ion-icon></ion-button>
+            
+            <ion-button target="_blank" href="https://wa.me/message/ZPRJHNWHMBD7B1"><ion-icon name="logo-whatsapp"></ion-icon></ion-button>
+            
+            <ion-button target="_blank" href="https://www.google.com/search?q=kevin+zamora+amela&oq=kevin+zamora+amela"><ion-icon name="logo-google"></ion-icon></ion-button>
+            
+            <ion-button target="_blank" href="https://www.youtube.com/channel/UCjL-GlVW6b58MHTO12wRP6A"><ion-icon name="logo-youtube"></ion-icon></ion-button>
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
@@ -29,7 +31,6 @@
 
     <body id="page-top">
 
-        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" routerLink="cv"><span class="d-block d-lg-none">Kevin
                     Zamora</span><span class="d-none d-lg-block"><img
@@ -57,8 +58,6 @@
         </nav>
 
 
-        <!-- Page Content-->
-        <!-- <ion-content [scrollEvents]="true"> -->
         <ion-content padding>
             <div class="container-fluid p-0">
                 <section class="resume-section">
@@ -66,7 +65,7 @@
                         <h2 class="mb-0">Bienvenid@s a mi Curriculum Vitae</h2>
                         <h1 class="mb-0">Soy <span class="text-primary">Kevin Zamora</span> y te animo a descubrirme
                         </h1>
-                        <!-- <app-contact-datas></app-contact-datas> -->
+                        <app-contact-datas></app-contact-datas>
                         <app-social-networks></app-social-networks>
                     </div>
                 </section>
@@ -74,3 +73,20 @@
         </ion-content>
     </body>
 </ion-content>
+
+<script>
+    function copyToClipboard() {
+  // Get the text field
+  var copyText = document.getElementById("email");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Correo copiado al portapapeles: " + copyText.value);
+}
+</script>
