@@ -14,6 +14,22 @@ body {
     }
 }
 
+.purple {
+    color:#60F
+}
+.purple span {
+    color: goldenrod
+}
+.purple i {
+    color: grey;
+}
+.gold {
+    color: goldenrod !important;
+}
+.grey {
+    color: grey !important;
+}
+
 h1,
 h2,
 h3,
@@ -34,7 +50,7 @@ p.lead {
 
 .subheading {
     font-family: $headings-font-family;
-    text-transform: uppercase;
+    // text-transform:;
     font-weight: 500;
     font-size: 1.5rem;
 }

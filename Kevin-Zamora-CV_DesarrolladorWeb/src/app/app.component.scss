@@ -1,0 +1,15 @@
+.whatsapp-button {
+    margin: 4.5rem 1.25rem;
+}
+.whatsapp-button ion-fab-button {
+    --background: #25D366;
+    --border-radius: 50%;
+    --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --color: black;
+}
+.whatsapp-button ion-fab-button:active {
+    --background-activated: #b7fc94;
+}
+.whatsapp-button ion-fab-button:hover {
+    --background-hover: #b7fc94;
+}
