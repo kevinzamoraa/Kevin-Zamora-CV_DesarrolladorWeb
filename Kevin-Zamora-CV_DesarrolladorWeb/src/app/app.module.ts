@@ -16,8 +16,8 @@ import { WorkingExperienciesModule } from './working-experiencies/working-experi
 import { StorePageModule } from './store/store.module';
 import { HttpClientModule } from '@angular/common/http';
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
 
 
 const firebaseConfig = {
@@ -29,8 +29,8 @@ const firebaseConfig = {
   appId: "1:174338969814:web:da4505e9c527619b293977"
 }
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
 @NgModule({
   declarations: [AppComponent],
