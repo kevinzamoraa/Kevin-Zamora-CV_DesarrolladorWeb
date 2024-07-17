@@ -1,0 +1,17 @@
+@media (max-width: 980px) {
+    .big-screens {
+        display: none;
+    }
+    .primary-nav {
+        display: none;
+    }
+    span {
+        display: none;
+    }
+}
+
+@media (min-width: 980px) {
+    .small-screens {
+        display: none;
+    }
+}

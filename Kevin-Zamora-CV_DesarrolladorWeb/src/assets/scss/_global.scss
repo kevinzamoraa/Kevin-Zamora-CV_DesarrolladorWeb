@@ -2,6 +2,9 @@
 // Global
 // 
 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 body {
     padding-top: $navbar-base-height;
     color: $gray-600;
@@ -15,7 +18,8 @@ body {
 }
 
 .purple {
-    color:#60F
+    /* color:#60F */
+    color: blueviolet
 }
 .purple span {
     color: goldenrod

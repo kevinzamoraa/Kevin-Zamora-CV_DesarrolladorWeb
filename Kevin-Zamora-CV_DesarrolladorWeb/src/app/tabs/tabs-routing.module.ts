@@ -9,43 +9,43 @@ const routes: Routes = [
     children: [
       {
         path: 'cv',
-        loadChildren: () => import('../cv/cv.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('../cv-resume/cv/cv.module').then(m => m.Tab1PageModule)
       },
           {
             path: 'cv/about-me',
-            loadChildren: () => import('../cv/about-me/about-me.module').then( m => m.AboutMePageModule)
+            loadChildren: () => import('../cv-resume/cv/about-me/about-me.module').then( m => m.AboutMePageModule)
           },
           {
             path: 'cv/experience',
-            loadChildren: () => import('../cv/experience/experience.module').then( m => m.ExperiencePageModule)
+            loadChildren: () => import('../cv-resume/cv/experience/experience.module').then( m => m.ExperiencePageModule)
           },
           {
             path: 'cv/education',
-            loadChildren: () => import('../cv/education/education.module').then( m => m.EducationPageModule)
+            loadChildren: () => import('../cv-resume/cv/education/education.module').then( m => m.EducationPageModule)
           },
           {
             path: 'cv/skills',
-            loadChildren: () => import('../cv/skills/skills.module').then( m => m.SkillsPageModule)
+            loadChildren: () => import('../cv-resume/cv/skills/skills.module').then( m => m.SkillsPageModule)
           },
           {
             path: 'cv/interests',
-            loadChildren: () => import('../cv/interests/interests.module').then( m => m.InterestsPageModule)
+            loadChildren: () => import('../cv-resume/cv/interests/interests.module').then( m => m.InterestsPageModule)
           },
           {
             path: 'cv/awards',
-            loadChildren: () => import('../cv/awards/awards.module').then( m => m.AwardsPageModule)
+            loadChildren: () => import('../cv-resume/cv/awards/awards.module').then( m => m.AwardsPageModule)
           },
           {
             path: 'cv/es',
-            loadChildren: () => import('../cv/es-cv-viewer/es-cv-viewer.module').then( m => m.EsCvViewerPageModule)
+            loadChildren: () => import('../cv-resume/cv/es-cv-viewer/es-cv-viewer.module').then( m => m.EsCvViewerPageModule)
           },
           {
             path: 'cv/en',
-            loadChildren: () => import('../cv/en-cv-viewer/en-cv-viewer.module').then( m => m.EnCvViewerPageModule)
+            loadChildren: () => import('../cv-resume/cv/en-cv-viewer/en-cv-viewer.module').then( m => m.EnCvViewerPageModule)
           },
       {
         path: 'biography',
-        loadChildren: () => import('../biography/biography.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('../cv-resume/biography/biography.module').then(m => m.Tab2PageModule)
       },
       {
         path: 'bookstore',

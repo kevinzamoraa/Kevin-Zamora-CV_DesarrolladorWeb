@@ -1,0 +1,41 @@
+<app-cv-navbar></app-cv-navbar>
+
+<ion-content [fullscreen]="true">
+
+  <body id="page-top">
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" routerLink="../../cv"><span class="d-block d-lg-none">¡Conóceme!</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../../../assets/img/profile.jpg" alt="¡Conóceme!"></span></a>
+          <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="../about-me"
+            routerDirection="forward">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="../experience"
+            routerDirection="forward">Experiencia</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="../education"
+            routerDirection="forward">Educación</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="../skills"
+            routerDirection="forward">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger actived" routerLink="../interests"
+            routerDirection="forward">Intereses</a></li>
+        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="../awards"
+            routerDirection="forward">Logros / Premios</a></li> -->
+      </ul>
+    </div>
+  </nav>
+    <ion-content padding>
+      <div class="container-fluid p-0">
+        <section class="resume-section" id="interests">
+          <div class="resume-section-content">
+            <h2 class="mb-5 gold">Intereses</h2>
+            <p class="lead mb-5 text-justify">Aparte de resultar un(a) <strong>Desarrollador Web Junior</strong>, también <u>me encanta moverme y seguir aprendiendo</u>, continuamente y acerca de todo en general; soy una persona con una gran Curiosidad. <br> Como desarrollador, ya os podréis imaginar que a su vez también me encanta o me podría apasionar <strong>la Innovación, la Informática, la Física y la Tecnología</strong>, entre otras, aunque eso no impide que también me gusten muchísimo otras muchas muchas cosas, de índole aparentemente dispar; algunas de estas otras son: el Diseño gráfico, la Psicología, el Voluntariado, Ayudar, Dibujar, Hablar, Relacionarme y Conocer Gente, Hacer Deporte y muchas cosas más. <br> <strong>En definitiva, me encanta Aprender y Descubrir constantemente, para así Mejorar sin parar</strong></p>
+          </div>
+        </section>
+      </div>
+    </ion-content>
+  </body>
+</ion-content>

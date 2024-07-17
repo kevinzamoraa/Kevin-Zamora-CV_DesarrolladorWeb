@@ -1,6 +1,15 @@
 {
     "formacionReglada": [
         {
+            "estudio": "CFGS en Desarrollo de Aplicaciones Multiplataforma (LOE)",
+            "intitucion":"CPIFP Bajo Aragón",
+            "localizacion": "En remoto y sin desplazarse a Alcañiz (Teruel)",
+            "periodo" : "Septiembre 2023 - Junio 2026",
+            "cualificacion" : "Es modular y me encantaría poder compaginarlo con un teletrabajo. PD: Este curso 2023-24 he aprobado las asignaturas de Sistemas Informáticos, Programación (en Java), Lenguajes de Marcado, Bases de Datos y Entornos de Desarrollo con las respectivas cualificaciones de 9, 7, 7, 5 y 5",
+            "enlace" : "https://github.com/zamelkev/CFGS-DAM",
+            "motivacion" : "Mi motivación: Justificar mis conocimientos ya existentes, seguir mejorándolos y aumentar mi empleabilidad, con el afán de iniciarme como desarrollador profesional, a poder ser mediante la modalidad de trabajo en remoto."
+        },
+        {
             "estudio": "Grado Universitario en Psicología",
             "intitucion":"UNED",
             "localizacion": "Tortosa (Tarragona)",

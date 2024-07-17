@@ -10,6 +10,21 @@
         font-weight: 800;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
+        color: rgb(214, 214, 214);
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+        font-weight: 800;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+        color: pink;
+    }
+
+    .actived {
+        font-weight: 800;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+        color: pink;
     }
 
     .navbar-toggler {

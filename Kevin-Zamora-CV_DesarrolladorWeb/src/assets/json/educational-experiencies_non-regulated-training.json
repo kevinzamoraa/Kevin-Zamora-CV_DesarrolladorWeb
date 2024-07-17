@@ -1,6 +1,15 @@
 {
     "formacionNoReglada": [
         {
+            "estudio": "Certificado Profesional en Full Stack",
+            "intitucion":"IBM y EDX",
+            "localizacion": "Online / a Distancia",
+            "periodo" : "Diciembre 2023 - Junio 2024",
+            "cualificacion" : "Finalizado con éxito",
+            "enlace" : "https://www.edx.org/es/certificates/professional-certificate/ibm-full-stack-developer",
+            "motivacion" : "Mi motivación: Seguir formándome para lograr mi objetivo: lograr trabajar como desarrollador/programador en modalidad de teletrabajo y en remoto."
+        },
+        {
             "estudio": "Curso de Especialización: Desarrollo Frontent con Angular (215h.)",
             "intitucion":"Adecco - Escuela Digital",
             "localizacion": "Online / a Distancia",
