@@ -1,7 +1,3 @@
-ion-title {
-    text-align: center;
-}
-
 @media (max-width: 980px) {
     .big-screens {
         display: none;
@@ -14,7 +10,7 @@ ion-title {
     }
 }
 
-@media (min-width: 980px) {
+@media (max-width: 450px) {
     .small-screens {
         display: none;
     }
