@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AngularFireAnalytics } from '@angular/fire/compat/analytics';
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(analytics: AngularFireAnalytics) {
+    analytics.logEvent('app_open', {"component": "AppComponent"});
+  }
+
+  
 }

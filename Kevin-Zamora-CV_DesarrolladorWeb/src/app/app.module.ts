@@ -16,8 +16,15 @@ import { WorkingExperienciesModule } from './cv-resume/working-experiencies/work
 import { StorePageModule } from './store/store.module';
 import { HttpClientModule } from '@angular/common/http';
 
-// import { initializeApp } from "firebase/app";
+import { AngularFireModule } from '@angular/fire/compat';
+import {ScreenTrackingService, UserTrackingService}
+from '@angular/fire/analytics';
+import {AngularFireAnalyticsModule} from "@angular/fire/compat/analytics";
 // import { getAnalytics } from "firebase/analytics";
+// import { initializeApp } from '@angular/fire/app';
+import * as firebase from 'firebase/analytics';
+firebase.initializeAnalytics;
+firebase.getAnalytics;
 
 
 const firebaseConfig = {
@@ -47,9 +54,11 @@ const firebaseConfig = {
     StorePageModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAnalyticsModule,
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [ ScreenTrackingService, UserTrackingService, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
